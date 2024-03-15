@@ -90,7 +90,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url('images/home.jpg') no-repeat;
+  background: url('/images/home.jpg') no-repeat;
   background-size: 28%;
   background-position: right;
   margin-right: 3%;
