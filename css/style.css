@@ -642,8 +642,18 @@ span {
   
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
-  color: var(--text-color);
-  opacity: 80%;
+  color: rgb(255, 255, 255, .5);
+}
+
+.field .error-txt {
+  position: absolute;
+  font-size: 1.6rem;
+  color: red;
+  text-align: left;
+  /*margin: -5px 0 10px;*/
+  top: 1.6rem;
+  left: 1.6rem;
+  display: none;
 }
 
 .contact form .focus {
