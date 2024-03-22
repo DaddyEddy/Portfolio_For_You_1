@@ -8,7 +8,8 @@
     <title>Portfolio Website</title>
 
     <link rel="stylesheet" href="css/style.css">
-
+  
+    
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -275,14 +276,14 @@
 
           <div class="input-field field">
             <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
-            <div class="error-txt">Full Name can't be blank</div>
-
+            <div class="error-txt">Full Name can't be blank<span class="animate scroll" style="--i:3;"></span></div>
+            
             <span class="focus"></span>
           </div>
 
           <div class="input-field field">
             <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
-            <div class="error-txt">Email Address can't be blank</div>
+            <div class="error-txt email">Email Address can't be blank<span class="animate scroll" style="--i:3;"></span></div>
 
             <span class="focus"></span>
           </div>
@@ -295,14 +296,14 @@
 
           <div class="input-field field">
             <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
-            <div class="error-txt">Phone Number can't be blank</div>
+            <div class="error-txt">Phone Number can't be blank<span class="animate scroll" style="--i:5;"></span></div>
 
             <span class="focus"></span>
           </div>
 
           <div class="input-field field">
             <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
-            <div class="error-txt">Subject can't be blank</div>
+            <div class="error-txt">Subject can't be blank<span class="animate scroll" style="--i:5;"></span></div>
 
             <span class="focus"></span>
           </div>
@@ -313,8 +314,8 @@
 
         <div class="textarea-field field">
           <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
-          <div class="error-txt">Field can't be blank</div>
-
+          <div class="error-txt">Field can't be blank<span class="animate scroll" style="--i:7;"></span></div>
+          
           <span class="focus"></span>
           
           <span class="animate scroll" style="--i:7;"></span>
@@ -322,7 +323,7 @@
         
 
         <div class="btn-box btns">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">Send Message</button>
 
           <span class="animate scroll" style="--i:9;"></span>
         </div>
@@ -351,6 +352,11 @@
 
     <!-- Contact Form -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Всплывающее окно после отправки письма -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <script src="js/script.js"></script>
 </body>
 

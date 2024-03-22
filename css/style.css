@@ -170,7 +170,7 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: 20rem;
   height: 100%;
   background: var(--main-color);
   border: .2rem solid var(--main-color);
@@ -178,6 +178,7 @@ section {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: .1rem;
+  padding: .3rem 0;
   color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
@@ -349,7 +350,7 @@ span {
 
 .btn-box.btns{
   display: inline-block;
-  width: 15rem;
+  width: 20rem;
 }
 
 .btn-box.btns a::before {
@@ -620,6 +621,7 @@ span {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 1.6rem;
 }
 
 .contact form .input-box .input-field {
@@ -646,14 +648,21 @@ span {
 }
 
 .field .error-txt {
-  position: absolute;
   font-size: 1.6rem;
-  color: red;
+  color: #d93025;
   text-align: left;
-  /*margin: -5px 0 10px;*/
-  top: 1.6rem;
-  left: 1.6rem;
+  margin: -5px 0 10px;
   display: none;
+}
+
+.field.error .error-txt {
+  position: absolute;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.field.error .item.error {
+  border-color: #d93025;
 }
 
 .contact form .focus {
@@ -662,7 +671,7 @@ span {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  /* background: var(--second-bg-color); */
   border-radius: .6rem;
   z-index: -1;
   transition: .5s;
@@ -676,19 +685,24 @@ span {
 
 }
 
-.contact form .textarea-field {
+form .textarea-field {
   position: relative;
-  margin: .8rem 0 2.7rem;
-  display: flex;
+  margin: 2.8rem 0 2.7rem;
+  display: block;
 }
 
-.contact form .textarea-field textarea {
+form .textarea-field .error-txt {
+  margin-top: -1rem;
+}
+
+form .textarea-field .item {
   resize: none;
 }
 
 .contact form .btn-box.btns .btn {
   cursor: pointer;
 } 
+
 
 /*Убрать стрелочки с <input type="number">*/
 input[type="number"]::-webkit-outer-spin-button,   /*Chrome*/
