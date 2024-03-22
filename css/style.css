@@ -13,9 +13,9 @@
 
 :root {
   --bg-color: #081b29;
-  --second-bg-color: #112e42;
+  --second-bg-color: #18253d;
   --text-color: #ededed;
-  --main-color: #00abf0;
+  --main-color: #FB9039;
 }
 
 html {
@@ -52,6 +52,9 @@ body {
   font-size: 2.5rem;
   color: var(--text-color);
   font-weight: 600;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.6rem;
 }
 
 .navbar {
@@ -179,6 +182,7 @@ section {
   font-weight: 600;
   letter-spacing: .1rem;
   padding: .3rem 0;
+  margin-right: 2.5rem;
   color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
